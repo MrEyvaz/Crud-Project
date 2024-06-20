@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(119, 175, 233);
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    border: 1px solid white;
+    box-shadow: 1px 1px 4px 1px;
+    background-color: white;
+    width: 31%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.headertext{
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    list-style: none;
+}
+
+.todoList-div {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.input-button {
+    display: flex;
+    justify-content: center;
+}
