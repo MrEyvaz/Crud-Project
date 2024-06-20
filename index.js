@@ -33,6 +33,7 @@ function addTodoItem(todo, deleteBtn) {
     const listItem = document.createElement('li')
     list.appendChild(listItem)
 
+    
     listItem.style.height = '36px';
     listItem.style.borderRadius = '10px';
     listItem.style.width = '318px';
@@ -66,7 +67,7 @@ function addTodoItem(todo, deleteBtn) {
     listItem.appendChild(deleteBtn)
 
     editBtn.addEventListener('click', function () {
-        editTodoItem(listItem)
+        editTodoItem(listItemText)
     })
 
     deleteBtn.addEventListener('click', function () {
@@ -75,12 +76,12 @@ function addTodoItem(todo, deleteBtn) {
 }
 
 
-function editTodoItem(listItem) {
+function editTodoItem(listItemText) {
     const newTodo = prompt('Enter new text for this task:')
-    listItem.textContent = newTodo
+    listItemText.textContent = newTodo
 }
 
 
-function deleteTodoItem(listItem) {
-    listItem.textContent = ''
+function deleteTodoItem(listItemText) {
+    listItemText.remove()
 }
